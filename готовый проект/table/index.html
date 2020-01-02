@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<title>Главная страница "Домашнего задания"</title>
+		<link rel="stylesheet" href="styles/style.css">
+			<h1 id="menu"><marquee>Таблицы</marquee></h1>
+		
+ </head>
+ <body>
+<br/>
+  <table>
+	<caption>Таблица №1</caption>
+  <tr>
+	<td rowspan="3">Объединен по вертикали</td>
+	<td> ячейка</td>
+	<td> ячейка</td>
+  </tr>
+<tr>
+	<td colspan="2"> Объединен по горизонтали</td>
+</tr>
+<tr>
+	<td>ячейка</td>
+	<td>ячейка</td>
+</tr>
+	</table>
+<br/>
+		 <table>
+	<caption>Таблица №2</caption>
+  <tr>
+	<td class="gor" colspan="2">Объединен по горизонтали</td>
+	<td>ячейка</td>
+  </tr>
+<tr>
+	<td> ячейка</td>
+	<td rowspan="2"; colspan="2">
+		<table class="tab">
+		<tr>
+			<td>Столбец 1</td>
+			<td rowspan="3">Объединен по вертикали</td>
+			<td rowspan="2">Объединен по вертикали</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Объединен по вертикали</td>
+		</tr>
+		<tr>
+			<td>ячейка</td>
+		</tr>
+	</td>
+</table>
+</tr>
+<tr>
+	<td>ячейка</td>
+</tr>
+	</table>
+<br/>
+<br/>
+<br/>
+<form>
+<table class="reg">
+<caption align="center">Форма регистрации</caption>
+<tr>
+<td class="reg"><label for="f">Фмилия:</label></td>
+<td class="reg">
+<input id="f" type="text">
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="i">Имя:</label></td>
+<td class="reg">
+<input id="i" type="text">
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="o">Отчество:</label></td>
+<td class="reg">
+<input id="o" type="text">
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="foto">Добавить фотографию:</label></td>
+<td class="reg">
+<input id="foto" type="file"/><br/>
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="adres">Адрес электронной почты:</label></td>
+<td class="reg">
+<input id="adres" type="text">
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="pas">Пароль:</label></td>
+<td class="reg">
+<input id="pas" type="password">
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="sait">Адрес сайта:</label></td>
+<td class="reg">
+<input id="sait" type="mail" value="http://">
+</td>
+</tr>
+<tr>
+<td class="reg">Пол:</td>
+<td class="reg">
+	<input type="radio" name="Sex" value="Мужской" checked="checked" /> М<br/>
+	<input type="radio" name="Sex" value="Женский" /> Ж<br/>
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="dat">Дата рождения:</label></td>
+<td class="reg">
+<input id="dat" type="data">
+</td>
+</tr>
+<tr>
+<td class="reg">Каким языком програмирования вы владете?</td>
+<td class="reg">
+<input type="checkbox" name="vb" />VB<br />
+<input type="checkbox" name="delphi" />Delphi<br />
+<input type="checkbox" name="pascal" checked="checked" />Pascal
+</td>
+</tr>
+<tr>
+<td class="reg">Страна?</td>
+<td class="reg">
+<select multiple="multiple" size="2">
+<option>Россия</option>
+<option>Австралия</option>
+<option>Италия </option>
+<option>Египет</option>
+<option>Ямайка</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="reg"><label for="me">О себе в произвольной форме:</label></td>
+<td class="reg">
+<textarea id="me" cols="30" rows="20">Род занятий:</textarea>
+</td>
+</tr>
+<tr>
+<td class="reg">
+<input type="submit" value="Регистрация!" />
+</td>
+<td class="reg">
+<input type="reset" value="Сброс полей" />
+</td>
+</tr>
+</table>
+</form>
+<br/>
+<br/>
+
+</body>
+<footer>&copy Black</footer>
+</html>

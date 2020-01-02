@@ -1,0 +1,177 @@
+   li#q1 {
+    display: inline-block; /* Строчно-блочные элементы */
+    background: #CA181A; /* Цвет фона */
+    margin-right: 3px; /* Расстояние между пунктами меню */
+    -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(-30deg); /* Для Firefox */
+    -o-transform: skewX(-30deg); /* Для Opera */
+    -ms-transform: skewX(-30deg); /* Для IE */
+    transform: skewX(-30deg); /* CSS3 */
+   }
+    a#q1 {
+    color: #fff; /* Цвет ссылок */
+    display: block; /* Блочный элемент */
+    padding: 5px 15px; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(30deg); /* Для Firefox */
+    -o-transform: skewX(30deg); /* Для Opera */
+    -ms-transform: skewX(30deg); /* Для IE */
+    transform: skewX(30deg); /* CSS3 */
+   }
+   a:hover { 
+   color:#EEEEEE;
+   }
+   a{
+   text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+   li#q1:hover {
+    background: #333; /* Цвет фона при наведении курсора мыши */
+   }
+    .sid {
+    list-style-image: url(../image_gallery/sid.png); /* Путь к изображению маркера */
+	background: #00BFFF; /* Параметры фона */
+	font-size: 15px; /* Размер шрифта */
+	width: 250px;
+   }
+	.voig{
+	list-style-image: url(../image_gallery/voig.png); /* Путь к изображению маркера */
+	background: #00FF80; /* Параметры фона */
+	font-size: 24px; /* Размер шрифта */
+	font-style: italic;/* Курсивное начертание */
+	width: 300px;
+   }
+   .nost1{
+	   list-style-image: url(../image_gallery/nost.png); /* Путь к изображению маркера */
+	   background: #00BFFF no-repeat 0 4px; /* Параметры фона */
+	   font-size: 15px; /* Размер шрифта */
+	   font-style: italic;/* Курсивное начертание */
+	   width: 250px;
+   }
+   li.nost1:after { 
+	   content: " new";
+	   color: red;
+   }
+	.nost{
+	   list-style-image: url(../image_gallery/nost.png); /* Путь к изображению маркера */
+	   background: #00BFFF no-repeat 0 4px; /* Параметры фона */
+	   font-size: 15px; /* Размер шрифта */
+	   font-style: italic;/* Курсивное начертание */
+	   width: 250px;
+   }
+   img {
+    border: 3px	solid #FE2EF7;
+   }
+   img:hover {
+    border: 3px solid transparent;
+   }
+   
+ body {
+	background-color: #013ADF;  /* Firefox */
+    background-image:   /* Webkit */
+      -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248,255,128,.5) 4px, transparent 40px),
+      -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255,186,170,.4) 3px, transparent 30px),
+      -moz-radial-gradient(ellipse, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 40px),
+      -moz-radial-gradient(ellipse, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
+   background-image:   /* Background Attributes */
+      -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
+      -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
+      -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+      -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+   background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+   background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;  /* Animation */
+   animation-name: movement;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;   /* Firefox */
+   -moz-animation-name: movement;
+   -moz-animation-duration: 5s;
+   -moz-animation-timing-function: linear;
+   -moz-animation-iteration-count: infinite;
+   /* Webkit */
+   -webkit-animation-name: movement;
+   -webkit-animation-duration: 5s;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+}
+	@keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+	@-moz-keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+	@-webkit-keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+	form { 
+	width: 60%; 
+}
+	input[type="text"]{
+		font-size: 18px;
+		width:  300px;
+	}
+	input[type="password"] {
+		width: 200px;
+	}
+	input[type="mail"]{
+		color: #190707;
+		font-size: 18px;
+		width:  300px;
+	}
+	input[type="mail"]:focus { 
+		border: 2px solid #aa88ff; 
+		background-color: #ffeeac;
+		color: #00FF80;
+	} 
+	input[type="submit"]:active { 
+		border: 2px solid #aa88ff; 
+		background-color: #2EFE2E;
+		color: #FF0040;
+	} 
+	input[type="reset"]:active { 
+		border: 2px solid #aa88ff; 
+		background-color: #FF0040;
+		color: #2EFE2E;
+	} 
+	a h2 {
+	text-shadow:1px 2px 0px rgba(194, 194, 194, 0.99);
+	font-size:30px;
+	color: #000000;
+	}
+	.fon {
+		background: #fff;
+	}
+	.com {
+		color:#D8D8D8;
+		background: none;
+	}
+	h2{
+		text-align:  center;
+	}
+	p:first-letter{
+		color: #FF0040;
+		margin-left: 15px;
+		margin-top: 0.5em; 
+		margin-bottom: 1em;
+		font-style: oblique;
+		font-variant: small-caps;
+	}
+	
